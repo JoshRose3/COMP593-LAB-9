@@ -1,3 +1,28 @@
+"""
+Pokémon Info Viewer
+This file contains the code for the Pokémon Info Viewer GUI application, written by Josh Rose.
+It implements a Python script using tkinter to create a GUI that fetches and displays information
+about a Pokémon from the PokeAPI based on user input.
+
+Functions:
+    - handle_btn_get_info(): Retrieves Pokémon information from the PokeAPI using the name entered by the user.
+      It populates the Info and Stats frames with data such as height, weight, types, and stats like HP, Attack, Defense,
+      Special Attack, Special Defense, and Speed. If the Pokémon name is invalid, it shows an error message.
+    - get_pokemon_info(): (Assumed to be in the `poke_api.py` file, which uses the requests module to fetch
+      data from the PokeAPI for the given Pokémon name).
+    - main(): Initializes the tkinter GUI, sets up the layout, and runs the main loop for the application.
+
+Example usage:
+    - Run the script in the terminal.
+    - Enter a Pokémon name in the input field and click "Get Info."
+    - The application will display Pokémon information such as height, weight, types, and stats, fetched from the PokeAPI.
+    - If an invalid Pokémon name is entered, an error message will be displayed.
+
+# This program is strictly my own work. Any material beyond course
+# learning materials that is taken from the Web or other sources
+# is properly cited, giving credit to the original author(s).
+"""
+
 from tkinter import Tk, ttk, messagebox
 import requests
 
